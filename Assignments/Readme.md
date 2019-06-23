@@ -553,7 +553,7 @@ Each *character* is printed along with the *list of indexes* where that characte
 
 Implement the `ContactsDao` interface using `HashMap` for the `PhonebookApp`.
 
-Class: *com.slk.training.entity.Contact*
+Class: *co.vinod.training.entity.Contact*
 
 ```java
 public class Contact {
@@ -591,7 +591,7 @@ public class Contact {
 }
 ```
 
-Interface *com.slk.training.dao.ContactsDao*
+Interface *co.vinod.training.dao.ContactsDao*
 
 ```java
 public interface ContactsDao {
@@ -611,7 +611,7 @@ public interface ContactsDao {
 }
 ```
 
-Class *com.slk.training.dao.impl.ContactsDaoHashMapIpml*
+Class *co.vinod.training.dao.impl.ContactsDaoHashMapIpml*
 
 ```java
 public class ContactsDaoHashMapIpml implements ContactsDao {
@@ -629,7 +629,7 @@ public class ContactsDaoHashMapIpml implements ContactsDao {
 
 Note: 
 
-* Get the latest version of *PhonebookApp.java* from <a href="https://github.com/kayartaya-vinod/2018_08_SLK_BOOTCAMP_JAVA/blob/master/JAVA_WORKSPACE/01%20Java%20Basics/src/com/slk/training/programs/PhonebookApp.java">here</a>
+* Get the latest version of *PhonebookApp.java* from <a href="https://github.com/kayartaya-vinod/2018_08_SLK_BOOTCAMP_JAVA/blob/master/JAVA_WORKSPACE/01%20Java%20Basics/src/co.vinod/training/programs/PhonebookApp.java">here</a>
 * Once you implement each method, test the same by running the `PhonebookApp` class
 
 ### Create a new implementation of the interface `ContactsDao` which stores/reads the data from a CSV file.
