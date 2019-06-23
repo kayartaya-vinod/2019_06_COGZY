@@ -126,7 +126,7 @@ The number of rows should be based on the value of a variable "num", and the num
 
 In trignometry, the Sine of an angle is represented by the series below:
 
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d9689077ce39529e3198213901261ebcf48197d">
+<img src="images/3d9689077ce39529e3198213901261ebcf48197d.svg">
 
 
 Write a Java function that accepts angle in degrees and returns the sine of the given angle.
@@ -300,9 +300,7 @@ public static String generatePassword(int length) {
 }
 ```
 
-The function should return a random string, each time when called, of required length (function argument). The password consists of lower case and upper case alphabets, digits from 0 to 9, special characters ~!@#$%^&*
-
-
+The function should return a random string, each time when called, of required length (function argument). The password consists of lower case and upper case alphabets, digits from 0 to 9, special characters `~!@#$%^&*`
 
 Hint: 
 
@@ -315,7 +313,7 @@ Hint:
 
 Create classes `Circle` and `Cylinder` as shown in the *UML* diagram below:
 
-<img src="http://www.ntu.edu.sg/home/ehchua/programming/java/images/ExerciseOOP_CircleCylinder.png">
+<img src="images/ExerciseOOP_CircleCylinder.png">
 
 
 In the `main()` function of a Program class, create an array of `Circle` references with the initialization shown below:
@@ -337,7 +335,7 @@ Print the area of the circular region of each cylinder along with the volume of 
 
 Create the classes `Person`, `Student`, and `Staff` as shown in the *UML* diagram below:
 
-<img src="http://www.ntu.edu.sg/home/ehchua/programming/java/images/ExerciseOOP_PersonAndSubclasses.png">
+<img src="images/ExerciseOOP_PersonAndSubclasses.png">
 
 
 
@@ -364,7 +362,7 @@ Print the details of all `Person` objects (using the `toString()`).
 Create the classes `Shape`, `Circle`, `Rectangle`, and `Square` as shown in the *UML* diagram below:
 
 
-<img src="http://www.ntu.edu.sg/home/ehchua/programming/java/images/ExerciseOOP_ShapeAndSubclasses.png">
+<img src="images/ExerciseOOP_ShapeAndSubclasses.png">
 
 
 The `toString` function of the above classes should return text as given below:
@@ -450,10 +448,9 @@ Interface *Movable* and its implementations *MovablePoint* and *MovableCircle*
 
 Write two concrete classes - MovablePoint and MovableCircle - that implement the Movable interface.
 
-<img src="http://www.ntu.edu.sg/home/ehchua/programming/java/images/ExerciseOOP_Movable.png">
+<img src="images/ExerciseOOP_Movable.png">
 
-For the MovablePoint class, declare the instance variable x, y, xSpeed and ySpeed with package access as shown with '~' in the class diagram (i.e., classes in the same package can access these variables directly). For the MovableCircle class, use a MovablePoint to represent its center (which contains four variable x, y, xSpeed and ySpeed). In other words, the MovableCircle composes a MovablePoint, and its radius.
-
+For the MovablePoint class, declare the instance variable x, y, xSpeed and ySpeed with package access as shown with `~` in the class diagram (i.e., classes in the same package can access these variables directly). For the MovableCircle class, use a MovablePoint to represent its center (which contains four variable x, y, xSpeed and ySpeed). In other words, the MovableCircle composes a MovablePoint, and its radius.
 
 ```java
 public class MovablePoint implements Movable {
@@ -517,7 +514,7 @@ System.out.println(m2);
 
 Write a new class called *MovableRectangle*, which composes two *MovablePoint* objects (representing the top-left and bottom-right corners) and implementing the *Movable* Interface. Make sure that the two points has the same speed.
 
-<img src="http://www.ntu.edu.sg/home/ehchua/programming/java/images/ExerciseOOP_MovableRectangle.png">
+<img src="images/ExerciseOOP_MovableRectangle.png">
 
 
 In the test program, add the following code to test the new implementation:
