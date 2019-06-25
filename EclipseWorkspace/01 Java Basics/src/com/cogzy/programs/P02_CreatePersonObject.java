@@ -12,7 +12,7 @@ public class P02_CreatePersonObject {
 		// reference assignment to an object
 		p1 = new Person();
 		p1.setName("Vinod");
-		p1.setHeight(175);
+		p1.setHeight(-175);
 		p1.setWeight(80.4);
 		
 		Person p2 = new Person();

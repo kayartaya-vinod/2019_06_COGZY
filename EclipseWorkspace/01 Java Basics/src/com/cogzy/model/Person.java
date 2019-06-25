@@ -1,11 +1,16 @@
 package com.cogzy.model;
 
-public class Person {
+public class Person { // extends Object{
 
 	// data members (state)
-	String name; // 8 bytes
-	int height; // 4 bytes
-	double weight; // 8 bytes
+	private String name; // 8 bytes
+	private int height; // 4 bytes
+	private double weight; // 8 bytes
+
+	// aggregation (HAS-A)
+	// composition is another type of aggregation (stronger form of aggregation)
+	private Address address = new Address(); 
+	// no need to import, since Address is in the same package as Person
 
 	// constructors
 	// 1. constructors donot have return types (not even void)
@@ -63,19 +68,34 @@ public class Person {
 	}
 
 	public void setWeight(double weight) {
+		if (weight < 0) {
+			throw new RuntimeException("Invalid value for weight; must be >0");
+		}
 		this.weight = weight;
 	}
 
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
 	public void printDetails() {
-		System.out.println("Name   = " + name);
-		System.out.println("Height = " + height + " cms");
-		System.out.println("Weight = " + weight + " kg");
-		System.out.println("-----------------------");
+		System.out.println("Name    = " + name);
+		System.out.println("Height  = " + height + " cms");
+		System.out.println("Weight  = " + weight + " kg");
+		System.out.println("Address = " + address.getStreet() + " " + 
+				address.getArea() + " " +
+				address.getCity() + " " + 
+				address.getState());
 	}
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", height=" + height + ", weight=" + weight + "]";
+		return "Person [name=" + name + ", height=" + height + ", weight=" + weight + 
+				", address = " + address + "]";
 	}
 
 }
