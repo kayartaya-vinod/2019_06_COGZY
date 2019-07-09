@@ -78,35 +78,95 @@ public class SinglyLinkedList<T> {
 
 	// 4. function to get an element at a given index
 	public T get(int index) {
-		return null;
+		if (index < 0 || index >= size || start == null) {
+			throw new IndexOutOfBoundsException("Invalid index");
+		}
+
+		if (index == 0) {
+			return start.data;
+		}
+
+		if (index == size - 1) {
+			return end.data;
+		}
+
+		Node<T> temp = start;
+		for (int i = 0; i < index; i++) {
+			temp = temp.next;
+		}
+
+		return temp.data;
 	}
 
 	// 5. function to delete an element at a given index
 	public T deleteAtIndex(int index) {
 		// delete the node at the given index and return the data of the node
-		return null;
+		if (index < 0 || index >= size || start == null) {
+			throw new IndexOutOfBoundsException("Invalid index");
+		}
+
+		Node<T> temp = start;
+		for (int i = 0; i < index - 1; i++) {
+			temp = temp.next;
+		}
+		Node<T> tbd = temp.next;
+		temp.next = tbd.next;
+		return tbd.data;
 	}
 
 	// 6. function to delete all elements (empty the list)
 	public void empty() {
 		// just delete all elements of the linked list
+		start = end = null; // all other Nodes will be collected as garbage by GC
 	}
 
 	// 7. function to set a value at a given index
 	public void set(T data, int index) {
 		// node at the given index should now contain this new data
+		if (index < 0 || index >= size || start == null) {
+			throw new IndexOutOfBoundsException("Invalid index");
+		}
+
+		if (index == 0) {
+			start.data = data;
+			return;
+		}
+
+		if (index == size - 1) {
+			end.data = data;
+			return;
+		}
+
+		Node<T> temp = start;
+		for (int i = 0; i < index; i++) {
+			temp = temp.next;
+		}
+		temp.data = data;
 	}
 
 	// 8. function to check if a given data exists in the list
 	public boolean exists(T data) {
 		// return true/false based on if the data is found in the list or not
-		return false;
+		return this.indexOf(data) != -1;
 	}
 
 	// 9. function to get the index of a given data
 	public int indexOf(T data) {
 		// should return -1 if the data is not found
 		// but if found, return the index of the same
+
+		if (start == null) {
+			return -1;
+		}
+
+		Node<T> temp = start;
+		for (int i = 0; i < size - 2; i++) {
+			if ( temp.data.equals(data)) {
+				return i;
+			}
+			temp = temp.next;
+		}
+
 		return -1;
 	}
 

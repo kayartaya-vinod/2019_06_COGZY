@@ -1,12 +1,12 @@
 package com.cogzy.programs;
 
-import com.cogzy.utils.SinglyLinkedList;
+import com.cogzy.utils.DoublyLinkedList;
 
-public class P01_LinkedListDemo {
+public class P02_TestingDoublyLinkedList {
 
 	public static void main(String[] args) {
 
-		SinglyLinkedList<Integer> nums = new SinglyLinkedList<Integer>();
+		DoublyLinkedList<Integer> nums = new DoublyLinkedList<Integer>();
 		
 		
 		nums.addAtStart(20); // 20
