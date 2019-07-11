@@ -17,6 +17,11 @@ public class P03_TestingBinarySearchTree {
 		tree.add("Ramesh");
 		
 		tree.print();
+		
+		tree.delete("Vinay");
+		tree.print();
+		
+		System.out.println(tree);
 	}
 	
 	public static void main_1(String[] args) {

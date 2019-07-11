@@ -32,7 +32,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 				// navigate to left onlt if currNode.left != null
 				add(newNode, currNode.left);
 			}
-		} else { //  if (newNode.data.compareTo(currNode.data) > 0) {
+		} else if (newNode.data.compareTo(currNode.data) > 0) {
 			if (currNode.right == null) {
 				currNode.right = newNode;
 			} else {
@@ -40,6 +40,10 @@ public class BinarySearchTree<T extends Comparable<T>> {
 				add(newNode, currNode.right);
 			}
 		}
+	}
+	
+	public void delete(T data) {
+		
 	}
 	
 	@Override
