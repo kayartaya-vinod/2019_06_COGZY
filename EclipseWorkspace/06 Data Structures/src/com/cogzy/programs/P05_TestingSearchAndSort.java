@@ -6,11 +6,9 @@ import com.cogzy.utils.ArrayUtil;
 public class P05_TestingSearchAndSort {
 
 	public static void main(String[] args) {
-
 		// testSequentialSearchAlgorithm();
 		// testBinarySearchAlgorithm();
 		testingBinarySearchForPersons();
-
 	}
 
 	static void testingBinarySearchForPersons() {
