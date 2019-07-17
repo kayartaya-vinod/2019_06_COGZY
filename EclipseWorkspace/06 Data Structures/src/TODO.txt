@@ -1,0 +1,11 @@
+Explain in a sentence or two, when you should prefer each of the following:
+
+1. List
+2. Set
+
+3. ArrayList
+4. Vector
+5. LinkedList
+6. HashSet
+7. TreeSet
+8. LinkedHashSet

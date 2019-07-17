@@ -75,12 +75,7 @@ public final class ArrayUtil {
 	}
 	
 	public static <T extends Comparable<T>> void quickSort(T[] array) {
-		// try this
+		
 	}
 
 }
-
-
-
-
-

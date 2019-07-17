@@ -24,7 +24,7 @@ public class P05_TestingSearchAndSort {
 			ArrayUtil.linearSort(nums);
 		} else if (sortType.equals("bubble")) {
 			ArrayUtil.bubbleSort(nums);
-		}
+		} 
 
 		System.out.println("After sorting...");
 		for (Integer n : nums) {
